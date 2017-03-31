@@ -1,0 +1,1062 @@
+<!DOCTYPE HTML>
+<html>
+
+        <head>
+                <title>My Toys</title>
+
+        <style>
+
+
+        body    {
+                perspective: 100px;
+        }
+
+        p       {
+                font-family: Verdana, sans-serif;
+                font-style: italic;
+                text-align: center;
+        }
+
+        #header {
+                height: 30px;
+                width: 500px;
+        }
+
+        #container      {
+                width: 300px;
+                height: 2000px;
+                position: absolute;
+                top: 50px;
+                left: 30px;
+        }
+
+        .box    {
+                width: 80px;
+                height: 120px;
+                border: 1px solid black;
+        }
+
+        #A1     {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+        }
+
+        #A2     {
+                position: absolute;
+                left: 80px;
+                top: 0px;
+        }
+
+        #A3     {
+                position: absolute;
+                left: 160px;
+                top: 0px;
+        }
+
+        #A4     {
+                position: absolute;
+                left: 240px;
+                top: 0px;
+        }
+
+        #A5     {
+                position: absolute;
+                left: 320px;
+                top: 0px;
+        }
+
+        #A6     {
+                position: absolute;
+                left: 320px;
+                top: 120px;
+        }
+
+        #A7     {
+                position: absolute;
+                left: 320px;
+                top: 240px;
+        }
+
+        #A8     {
+                position: absolute;
+                left: 320px;
+                top: 360px;
+        }
+
+        #A9     {
+                position: absolute;
+                left: 320px;
+                top: 480px;
+        }
+
+        #A10    {
+                position: absolute;
+                left: 320px;
+                top: 600px;
+        }
+
+        #A11    {
+                position: absolute;
+                left: 240px;
+                top: 600px;
+        }
+
+        #A12    {
+                position: absolute;
+                left: 160px;
+                top: 600px;
+        }
+
+        #A13    {
+                position: absolute;
+                left: 80px;
+                top: 600px;
+        }
+
+        #A14    {
+                position: absolute;
+                left: 0px;
+                top: 600px;
+        }
+
+        #A15    {
+                position: absolute;
+                left: 0px;
+                top: 480px;
+        }
+
+        #A16    {
+                position: absolute;
+                left: 0px;
+                top: 360px;
+        }
+
+        #A17    {
+                position: absolute;
+                left: 0px;
+                top: 240px;
+        }
+
+        #A18    {
+                position: absolute;
+                left: 0px;
+                top: 120px;
+        }
+
+        #B1     {
+                position: absolute;
+                left: 80px;
+                top: 120px;
+        }
+
+        #B2     {
+                position: absolute;
+                left: 160px;
+                top: 120px;
+        }
+
+        #B3     {
+                position: absolute;
+                left: 240px;
+                top: 120px;
+        }
+
+        #B4     {
+                position: absolute;
+                left: 240px;
+                top: 240px;
+        }
+
+        #B5     {
+                position: absolute;
+                left: 240px;
+                top: 360px;
+        }
+
+        #B6     {
+                position: absolute;
+                left: 240px;
+                top: 480px;
+        }
+
+        #B7     {
+                position: absolute;
+                left: 160px;
+                top: 480px;
+        }
+
+        #B8     {
+                position: absolute;
+                left: 80px;
+                top: 480px;
+        }
+
+        #B9     {
+                position: absolute;
+                left: 80px;
+                top: 360px;
+        }
+
+        #B10    {
+                position: absolute;
+                left: 80px;
+                top: 240px;
+        }
+
+        #C1     {
+                position: absolute;
+                left: 160px;
+                top: 240px;
+        }
+
+        #C2     {
+                position: absolute;
+                left: 160px;
+                top: 360px;
+        }
+
+        button  {
+                width: 160px;
+                height: 40px;
+                font-size: 18px;
+                background-color: blue;
+                color: white;
+                margin-left: 40px;
+        }
+
+
+
+        </style>
+
+
+        </head>
+        <body>
+        <div id="header">
+        <button id="shockButton" onClick="Cycle5()">5-Color Cycle</button>
+        <button id="shockerButton" onClick="Cycle15()">15-Color Cycle</button>
+        </div>
+        <div id="container">
+                <div id="A1" class="box">A1</div>
+                <div id="A2" class="box">A2</div>
+                <div id="A3" class="box">A3</div>
+                <div id="A4" class="box">A4</div>
+                <div id="A5" class="box">A5</div>
+                <div id="A6" class="box">A6</div>
+                <div id="A7" class="box">A7</div>
+                <div id="A8" class="box">A8</div>
+                <div id="A9" class="box">A9</div>
+                <div id="A10" class="box">A10</div>
+                <div id="A11" class="box">A11</div>
+                <div id="A12" class="box">A12</div>
+                <div id="A13" class="box">A13</div>
+                <div id="A14" class="box">A14</div>
+                <div id="A15" class="box">A15</div>
+                <div id="A16" class="box">A16</div>
+                <div id="A17" class="box">A17</div>
+                <div id="A18" class="box">A18</div>
+                <div id="B1" class="box">B1</div>
+                <div id="B2" class="box">B2</div>
+                <div id="B3" class="box">B3</div>
+                <div id="B4" class="box">B4</div>
+                <div id="B5" class="box">B5</div>
+                <div id="B6" class="box">B6</div>
+                <div id="B7" class="box">B7</div>
+                <div id="B8" class="box">B8</div>
+                <div id="B9" class="box">B9</div>
+                <div id="B10" class="box">B10</div>
+                <div id="C1" class="box">C1</div>
+                <div id="C2" class="box">C2</div>
+
+        </div>
+        <script>
+                        function Cycle5()       {
+<!--                            document.getElementById("shockingPopUp").style.visibility = visible; -->
+                                var boxA1 = document.getElementById('A1');
+                                var boxA2 = document.getElementById('A2');
+                                var boxA3 = document.getElementById('A3');
+                                var boxA4 = document.getElementById('A4');
+                                var boxA5 = document.getElementById('A5');
+                                var boxA6 = document.getElementById('A6');
+                                var boxA7 = document.getElementById('A7');
+                                var boxA8 = document.getElementById('A8');
+                                var boxA9 = document.getElementById('A9');
+                                var boxA10 = document.getElementById('A10');
+                                var boxA11 = document.getElementById('A11');
+                                var boxA12 = document.getElementById('A12');
+                                var boxA13 = document.getElementById('A13');
+                                var boxA14 = document.getElementById('A14');
+                                var boxA15 = document.getElementById('A15');
+                                var boxA16 = document.getElementById('A16');
+                                var boxA17 = document.getElementById('A17');
+                                var boxA18 = document.getElementById('A18');
+                                var boxA1 = document.getElementById('A1');
+                                var boxA2 = document.getElementById('A2');
+                                var boxA3 = document.getElementById('A3');
+                                var boxA4 = document.getElementById('A4');
+                                var boxA5 = document.getElementById('A5');
+                                var boxA6 = document.getElementById('A6');
+                                var boxA7 = document.getElementById('A7');
+                                var boxA8 = document.getElementById('A8');
+                                var boxA9 = document.getElementById('A9');
+                                var boxA10 = document.getElementById('A10');
+                                var boxA11 = document.getElementById('A11');
+                                var boxA12 = document.getElementById('A12');
+                                var boxA13 = document.getElementById('A13');
+                                var boxA14 = document.getElementById('A14');
+                                var boxA15 = document.getElementById('A15');
+                                var boxA16 = document.getElementById('A16');
+                                var boxA17 = document.getElementById('A17');
+                                var boxA18 = document.getElementById('A18');
+                                var boxB1 = document.getElementById('B1');
+                                var boxB2 = document.getElementById('B2');
+                                var boxB3 = document.getElementById('B3');
+                                var boxB4 = document.getElementById('B4');
+                                var boxB5 = document.getElementById('B5');
+                                var boxB6 = document.getElementById('B6');
+                                var boxB7 = document.getElementById('B7');
+                                var boxB8 = document.getElementById('B8');
+                                var boxB9 = document.getElementById('B9');
+                                var boxB10 = document.getElementById('B10');
+                                var boxC1 = document.getElementById('C1');
+                                var boxC2 = document.getElementById('C2');
+
+                        setTimeout(function() { boxA1.style.backgroundColor = "blue"; }, 200);
+                        setTimeout(function() { boxA1.style.backgroundColor = "green"; }, 400);
+                        setTimeout(function() { boxA1.style.backgroundColor = "yellow"; }, 600);
+                        setTimeout(function() { boxA1.style.backgroundColor = "orange"; }, 800);
+                        setTimeout(function() { boxA1.style.backgroundColor = "red"; }, 1000);
+                        setTimeout(function() { boxA1.style.backgroundColor = "white"; }, 1200);
+                        setTimeout(function() { boxA2.style.backgroundColor = "blue"; }, 400);
+                        setTimeout(function() { boxA2.style.backgroundColor = "green"; }, 600);
+                        setTimeout(function() { boxA2.style.backgroundColor = "yellow"; }, 800);
+                        setTimeout(function() { boxA2.style.backgroundColor = "orange"; }, 1000);
+                        setTimeout(function() { boxA2.style.backgroundColor = "red"; }, 1200);
+                        setTimeout(function() { boxA2.style.backgroundColor = "white"; }, 1400);
+                        setTimeout(function() { boxA3.style.backgroundColor = "blue"; }, 600);
+                        setTimeout(function() { boxA3.style.backgroundColor = "green"; }, 800);
+                        setTimeout(function() { boxA3.style.backgroundColor = "yellow"; }, 1000);
+                        setTimeout(function() { boxA3.style.backgroundColor = "orange"; }, 1200);
+                        setTimeout(function() { boxA3.style.backgroundColor = "red"; }, 1400);
+                        setTimeout(function() { boxA3.style.backgroundColor = "white"; }, 1600);
+                        setTimeout(function() { boxA4.style.backgroundColor = "blue"; }, 800);
+                        setTimeout(function() { boxA4.style.backgroundColor = "green"; }, 1000);
+                        setTimeout(function() { boxA4.style.backgroundColor = "yellow"; }, 1200);
+                        setTimeout(function() { boxA4.style.backgroundColor = "orange"; }, 1400);
+                        setTimeout(function() { boxA4.style.backgroundColor = "red"; }, 1600);
+                        setTimeout(function() { boxA4.style.backgroundColor = "white"; }, 1800);
+                        setTimeout(function() { boxA5.style.backgroundColor = "blue"; }, 1000);
+                        setTimeout(function() { boxA5.style.backgroundColor = "green"; }, 1200);
+                        setTimeout(function() { boxA5.style.backgroundColor = "yellow"; }, 1400);
+                        setTimeout(function() { boxA5.style.backgroundColor = "orange"; }, 1600);
+                        setTimeout(function() { boxA5.style.backgroundColor = "red"; }, 1800);
+                        setTimeout(function() { boxA5.style.backgroundColor = "white"; }, 2000);
+                        setTimeout(function() { boxA6.style.backgroundColor = "blue"; }, 1200);
+                        setTimeout(function() { boxA6.style.backgroundColor = "green"; }, 1400);
+                        setTimeout(function() { boxA6.style.backgroundColor = "yellow"; }, 1600);
+                        setTimeout(function() { boxA6.style.backgroundColor = "orange"; }, 1800);
+                        setTimeout(function() { boxA6.style.backgroundColor = "red"; }, 2000);
+                        setTimeout(function() { boxA6.style.backgroundColor = "white"; }, 2200);
+                        setTimeout(function() { boxA7.style.backgroundColor = "blue"; }, 1400);
+                        setTimeout(function() { boxA7.style.backgroundColor = "green"; }, 1600);
+                        setTimeout(function() { boxA7.style.backgroundColor = "yellow"; }, 1800);
+                        setTimeout(function() { boxA7.style.backgroundColor = "orange"; }, 2000);
+                        setTimeout(function() { boxA7.style.backgroundColor = "red"; }, 2200);
+                        setTimeout(function() { boxA7.style.backgroundColor = "white"; }, 2400);
+                        setTimeout(function() { boxA8.style.backgroundColor = "blue"; }, 1600);
+                        setTimeout(function() { boxA8.style.backgroundColor = "green"; }, 1800);
+                        setTimeout(function() { boxA8.style.backgroundColor = "yellow"; }, 2000);
+                        setTimeout(function() { boxA8.style.backgroundColor = "orange"; }, 2200);
+                        setTimeout(function() { boxA8.style.backgroundColor = "red"; }, 2400);
+                        setTimeout(function() { boxA8.style.backgroundColor = "white"; }, 2600);
+                        setTimeout(function() { boxA9.style.backgroundColor = "blue"; }, 1800);
+                        setTimeout(function() { boxA9.style.backgroundColor = "green"; }, 2000);
+                        setTimeout(function() { boxA9.style.backgroundColor = "yellow"; }, 2200);
+                        setTimeout(function() { boxA9.style.backgroundColor = "orange"; }, 2400);
+                        setTimeout(function() { boxA9.style.backgroundColor = "red"; }, 2600);
+                        setTimeout(function() { boxA9.style.backgroundColor = "white"; }, 2800);
+                        setTimeout(function() { boxA10.style.backgroundColor = "blue"; }, 2000);
+                        setTimeout(function() { boxA10.style.backgroundColor = "green"; }, 2200);
+                        setTimeout(function() { boxA10.style.backgroundColor = "yellow"; }, 2400);
+                        setTimeout(function() { boxA10.style.backgroundColor = "orange"; }, 2600);
+                        setTimeout(function() { boxA10.style.backgroundColor = "red"; }, 2800);
+                        setTimeout(function() { boxA10.style.backgroundColor = "white"; }, 3000);
+                        setTimeout(function() { boxA11.style.backgroundColor = "blue"; }, 2200);
+                        setTimeout(function() { boxA11.style.backgroundColor = "green"; }, 2400);
+                        setTimeout(function() { boxA11.style.backgroundColor = "yellow"; }, 2600);
+                        setTimeout(function() { boxA11.style.backgroundColor = "orange"; }, 2800);
+                        setTimeout(function() { boxA11.style.backgroundColor = "red"; }, 3000);
+                        setTimeout(function() { boxA11.style.backgroundColor = "white"; }, 3200);
+                        setTimeout(function() { boxA12.style.backgroundColor = "blue"; }, 2400);
+                        setTimeout(function() { boxA12.style.backgroundColor = "green"; }, 2600);
+                        setTimeout(function() { boxA12.style.backgroundColor = "yellow"; }, 2800);
+                        setTimeout(function() { boxA12.style.backgroundColor = "orange"; }, 3000);
+                        setTimeout(function() { boxA12.style.backgroundColor = "red"; }, 3200);
+                        setTimeout(function() { boxA12.style.backgroundColor = "white"; }, 3400);
+                        setTimeout(function() { boxA13.style.backgroundColor = "blue"; }, 2600);
+                        setTimeout(function() { boxA13.style.backgroundColor = "green"; }, 2800);
+                        setTimeout(function() { boxA13.style.backgroundColor = "yellow"; }, 3000);
+                        setTimeout(function() { boxA13.style.backgroundColor = "orange"; }, 3200);
+                        setTimeout(function() { boxA13.style.backgroundColor = "red"; }, 3400);
+                        setTimeout(function() { boxA13.style.backgroundColor = "white"; }, 3600);
+                        setTimeout(function() { boxA14.style.backgroundColor = "blue"; }, 2800);
+                        setTimeout(function() { boxA14.style.backgroundColor = "green"; }, 3000);
+                        setTimeout(function() { boxA14.style.backgroundColor = "yellow"; }, 3200);
+                        setTimeout(function() { boxA14.style.backgroundColor = "orange"; }, 3400);
+                        setTimeout(function() { boxA14.style.backgroundColor = "red"; }, 3600);
+                        setTimeout(function() { boxA14.style.backgroundColor = "white"; }, 3800);
+                        setTimeout(function() { boxA15.style.backgroundColor = "blue"; }, 3000);
+                        setTimeout(function() { boxA15.style.backgroundColor = "green"; }, 3200);
+                        setTimeout(function() { boxA15.style.backgroundColor = "yellow"; }, 3400);
+                        setTimeout(function() { boxA15.style.backgroundColor = "orange"; }, 3600);
+                        setTimeout(function() { boxA15.style.backgroundColor = "red"; }, 3800);
+                        setTimeout(function() { boxA15.style.backgroundColor = "white"; }, 4000);
+                        setTimeout(function() { boxA16.style.backgroundColor = "blue"; }, 3200);
+                        setTimeout(function() { boxA16.style.backgroundColor = "green"; }, 3400);
+                        setTimeout(function() { boxA16.style.backgroundColor = "yellow"; }, 3600);
+                        setTimeout(function() { boxA16.style.backgroundColor = "orange"; }, 3800);
+                        setTimeout(function() { boxA16.style.backgroundColor = "red"; }, 4000);
+                        setTimeout(function() { boxA16.style.backgroundColor = "white"; }, 4200);
+                        setTimeout(function() { boxA17.style.backgroundColor = "blue"; }, 3400);
+                        setTimeout(function() { boxA17.style.backgroundColor = "green"; }, 3600);
+                        setTimeout(function() { boxA17.style.backgroundColor = "yellow"; }, 3800);
+                        setTimeout(function() { boxA17.style.backgroundColor = "orange"; }, 4000);
+                        setTimeout(function() { boxA17.style.backgroundColor = "red"; }, 4200);
+                        setTimeout(function() { boxA17.style.backgroundColor = "white"; }, 4400);
+                        setTimeout(function() { boxA18.style.backgroundColor = "blue"; }, 3600);
+                        setTimeout(function() { boxA18.style.backgroundColor = "green"; }, 3800);
+                        setTimeout(function() { boxA18.style.backgroundColor = "yellow"; }, 4000);
+                        setTimeout(function() { boxA18.style.backgroundColor = "orange"; }, 4200);
+                        setTimeout(function() { boxA18.style.backgroundColor = "red"; }, 4400);
+                        setTimeout(function() { boxA18.style.backgroundColor = "white"; }, 4600);
+                        setTimeout(function() { boxB1.style.backgroundColor = "blue"; }, 3800);
+                        setTimeout(function() { boxB1.style.backgroundColor = "green"; }, 4000);
+                        setTimeout(function() { boxB1.style.backgroundColor = "yellow"; }, 4200);
+                        setTimeout(function() { boxB1.style.backgroundColor = "orange"; }, 4400);
+                        setTimeout(function() { boxB1.style.backgroundColor = "red"; }, 4600);
+                        setTimeout(function() { boxB1.style.backgroundColor = "white"; }, 4800);
+                        setTimeout(function() { boxB2.style.backgroundColor = "blue"; }, 4000);
+                        setTimeout(function() { boxB2.style.backgroundColor = "green"; }, 4200);
+                        setTimeout(function() { boxB2.style.backgroundColor = "yellow"; }, 4400);
+                        setTimeout(function() { boxB2.style.backgroundColor = "orange"; }, 4600);
+                        setTimeout(function() { boxB2.style.backgroundColor = "red"; }, 4800);
+                        setTimeout(function() { boxB2.style.backgroundColor = "white"; }, 5000);
+                        setTimeout(function() { boxB3.style.backgroundColor = "blue"; }, 4200);
+                        setTimeout(function() { boxB3.style.backgroundColor = "green"; }, 4400);
+                        setTimeout(function() { boxB3.style.backgroundColor = "yellow"; }, 4600);
+                        setTimeout(function() { boxB3.style.backgroundColor = "orange"; }, 4800);
+                        setTimeout(function() { boxB3.style.backgroundColor = "red"; }, 5000);
+                        setTimeout(function() { boxB3.style.backgroundColor = "white"; }, 5200);
+                        setTimeout(function() { boxB4.style.backgroundColor = "blue"; }, 4400);
+                        setTimeout(function() { boxB4.style.backgroundColor = "green"; }, 4600);
+                        setTimeout(function() { boxB4.style.backgroundColor = "yellow"; }, 4800);
+                        setTimeout(function() { boxB4.style.backgroundColor = "orange"; }, 5000);
+                        setTimeout(function() { boxB4.style.backgroundColor = "red"; }, 5200);
+                        setTimeout(function() { boxB4.style.backgroundColor = "white"; }, 5400);
+                        setTimeout(function() { boxB5.style.backgroundColor = "blue"; }, 4600);
+                        setTimeout(function() { boxB5.style.backgroundColor = "green"; }, 4800);
+                        setTimeout(function() { boxB5.style.backgroundColor = "yellow"; }, 5000);
+                        setTimeout(function() { boxB5.style.backgroundColor = "orange"; }, 5200);
+                        setTimeout(function() { boxB5.style.backgroundColor = "red"; }, 5400);
+                        setTimeout(function() { boxB5.style.backgroundColor = "white"; }, 5600);
+                        setTimeout(function() { boxB6.style.backgroundColor = "blue"; }, 4800);
+                        setTimeout(function() { boxB6.style.backgroundColor = "green"; }, 5000);
+                        setTimeout(function() { boxB6.style.backgroundColor = "yellow"; }, 5200);
+                        setTimeout(function() { boxB6.style.backgroundColor = "orange"; }, 5400);
+                        setTimeout(function() { boxB6.style.backgroundColor = "red"; }, 5600);
+                        setTimeout(function() { boxB6.style.backgroundColor = "white"; }, 5800);
+                        setTimeout(function() { boxB7.style.backgroundColor = "blue"; }, 5000);
+                        setTimeout(function() { boxB7.style.backgroundColor = "green"; }, 5200);
+                        setTimeout(function() { boxB7.style.backgroundColor = "yellow"; }, 5400);
+                        setTimeout(function() { boxB7.style.backgroundColor = "orange"; }, 5600);
+                        setTimeout(function() { boxB7.style.backgroundColor = "red"; }, 5800);
+                        setTimeout(function() { boxB7.style.backgroundColor = "white"; }, 6000);
+                        setTimeout(function() { boxB8.style.backgroundColor = "blue"; }, 5200);
+                        setTimeout(function() { boxB8.style.backgroundColor = "green"; }, 5400);
+                        setTimeout(function() { boxB8.style.backgroundColor = "yellow"; }, 5600);
+                        setTimeout(function() { boxB8.style.backgroundColor = "orange"; }, 5800);
+                        setTimeout(function() { boxB8.style.backgroundColor = "red"; }, 6000);
+                        setTimeout(function() { boxB8.style.backgroundColor = "white"; }, 6200);
+                        setTimeout(function() { boxB9.style.backgroundColor = "blue"; }, 5400);
+                        setTimeout(function() { boxB9.style.backgroundColor = "green"; }, 5600);
+                        setTimeout(function() { boxB9.style.backgroundColor = "yellow"; }, 5800);
+                        setTimeout(function() { boxB9.style.backgroundColor = "orange"; }, 6000);
+                        setTimeout(function() { boxB9.style.backgroundColor = "red"; }, 6200);
+                        setTimeout(function() { boxB9.style.backgroundColor = "white"; }, 6400);
+                        setTimeout(function() { boxB10.style.backgroundColor = "blue"; }, 5600);
+                        setTimeout(function() { boxB10.style.backgroundColor = "green"; }, 5800);
+                        setTimeout(function() { boxB10.style.backgroundColor = "yellow"; }, 6000);
+                        setTimeout(function() { boxB10.style.backgroundColor = "orange"; }, 6200);
+                        setTimeout(function() { boxB10.style.backgroundColor = "red"; }, 6400);
+                        setTimeout(function() { boxB10.style.backgroundColor = "white"; }, 6600);
+                        setTimeout(function() { boxC1.style.backgroundColor = "blue"; }, 5800);
+                        setTimeout(function() { boxC1.style.backgroundColor = "green"; }, 6000);
+                        setTimeout(function() { boxC1.style.backgroundColor = "yellow"; }, 6200);
+                        setTimeout(function() { boxC1.style.backgroundColor = "orange"; }, 6400);
+                        setTimeout(function() { boxC1.style.backgroundColor = "red"; }, 6600);
+                        setTimeout(function() { boxC1.style.backgroundColor = "white"; }, 6800);
+                        setTimeout(function() { boxC2.style.backgroundColor = "blue"; }, 6000);
+                        setTimeout(function() { boxC2.style.backgroundColor = "green"; }, 6200);
+                        setTimeout(function() { boxC2.style.backgroundColor = "yellow"; }, 6400);
+                        setTimeout(function() { boxC2.style.backgroundColor = "orange"; }, 6600);
+                        setTimeout(function() { boxC2.style.backgroundColor = "red"; }, 6800);
+                        setTimeout(function() { boxC2.style.backgroundColor = "white"; }, 7000);
+        }
+
+                function Cycle15()      {
+<!--                            document.getElementById("shockingPopUp").style.visibility = visible; -->
+                                var boxA1 = document.getElementById('A1');
+                                var boxA2 = document.getElementById('A2');
+                                var boxA3 = document.getElementById('A3');
+                                var boxA4 = document.getElementById('A4');
+                                var boxA5 = document.getElementById('A5');
+                                var boxA6 = document.getElementById('A6');
+                                var boxA7 = document.getElementById('A7');
+                                var boxA8 = document.getElementById('A8');
+                                var boxA9 = document.getElementById('A9');
+                                var boxA10 = document.getElementById('A10');
+                                var boxA11 = document.getElementById('A11');
+                                var boxA12 = document.getElementById('A12');
+                                var boxA13 = document.getElementById('A13');
+                                var boxA14 = document.getElementById('A14');
+                                var boxA15 = document.getElementById('A15');
+                                var boxA16 = document.getElementById('A16');
+                                var boxA17 = document.getElementById('A17');
+                                var boxA18 = document.getElementById('A18');
+                                var boxA1 = document.getElementById('A1');
+                                var boxA2 = document.getElementById('A2');
+                                var boxA3 = document.getElementById('A3');
+                                var boxA4 = document.getElementById('A4');
+                                var boxA5 = document.getElementById('A5');
+                                var boxA6 = document.getElementById('A6');
+                                var boxA7 = document.getElementById('A7');
+                                var boxA8 = document.getElementById('A8');
+                                var boxA9 = document.getElementById('A9');
+                                var boxA10 = document.getElementById('A10');
+                                var boxB1 = document.getElementById('B1');
+                                var boxB2 = document.getElementById('B2');
+                                var boxB3 = document.getElementById('B3');
+                                var boxB4 = document.getElementById('B4');
+                                var boxB5 = document.getElementById('B5');
+                                var boxB6 = document.getElementById('B6');
+                                var boxB7 = document.getElementById('B7');
+                                var boxB8 = document.getElementById('B8');
+                                var boxB9 = document.getElementById('B9');
+                                var boxB10 = document.getElementById('B10');
+                                var boxC1 = document.getElementById('C1');
+                                var boxC2 = document.getElementById('C2');
+
+                        setTimeout(function() { boxA1.style.backgroundColor = "#0000CC"; }, 200);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#3333CC"; }, 400);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#9966FF"; }, 600);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#990033"; }, 800);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#CC0033"; }, 1000);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#CC3399"; }, 1200);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#FF0066"; }, 1400);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#FF0000"; }, 1600);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#FF6600"; }, 1800);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#FF9933"; }, 2000);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#FFFF00"; }, 2200);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#33CC33"; }, 2400);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#006600"; }, 2600);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#00FF99"; }, 2800);
+                        setTimeout(function() { boxA1.style.backgroundColor = "#33CCCC"; }, 3000);
+                        setTimeout(function() { boxA1.style.backgroundColor = "white"; }, 3200);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#0000CC"; }, 400);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#3333CC"; }, 600);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#9966FF"; }, 800);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#990033"; }, 1000);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#CC0033"; }, 1200);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#CC3399"; }, 1400);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#FF0066"; }, 1600);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#FF0000"; }, 1800);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#FF6600"; }, 2000);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#FF9933"; }, 2200);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#FFFF00"; }, 2400);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#33CC33"; }, 2600);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#006600"; }, 2800);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#00FF99"; }, 3000);
+                        setTimeout(function() { boxA2.style.backgroundColor = "#33CCCC"; }, 3200);
+                        setTimeout(function() { boxA2.style.backgroundColor = "white"; }, 3400);
+
+                        setTimeout(function() { boxA3.style.backgroundColor = "#0000CC"; }, 600);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#3333CC"; }, 800);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#9966FF"; }, 1000);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#990033"; }, 1200);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#CC0033"; }, 1400);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#CC3399"; }, 1600);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#FF0066"; }, 1800);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#FF0000"; }, 2000);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#FF6600"; }, 2200);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#FF9933"; }, 2400);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#FFFF00"; }, 2600);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#33CC33"; }, 2800);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#006600"; }, 3000);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#00FF99"; }, 3200);
+                        setTimeout(function() { boxA3.style.backgroundColor = "#33CCCC"; }, 3400);
+                        setTimeout(function() { boxA3.style.backgroundColor = "white"; }, 3600);
+
+                        setTimeout(function() { boxA4.style.backgroundColor = "#0000CC"; }, 800);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#3333CC"; }, 1000);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#9966FF"; }, 1200);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#990033"; }, 1400);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#CC0033"; }, 1600);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#CC3399"; }, 1800);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#FF0066"; }, 2000);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#FF0000"; }, 2200);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#FF6600"; }, 2400);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#FF9933"; }, 2600);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#FFFF00"; }, 2800);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#33CC33"; }, 3000);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#006600"; }, 3200);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#00FF99"; }, 3400);
+                        setTimeout(function() { boxA4.style.backgroundColor = "#33CCCC"; }, 3600);
+                        setTimeout(function() { boxA4.style.backgroundColor = "white"; }, 3800);
+
+                        setTimeout(function() { boxA5.style.backgroundColor = "#0000CC"; }, 1000);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#3333CC"; }, 1200);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#9966FF"; }, 1400);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#990033"; }, 1600);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#CC0033"; }, 1800);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#CC3399"; }, 2000);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#FF0066"; }, 2200);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#FF0000"; }, 2400);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#FF6600"; }, 2600);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#FF9933"; }, 2800);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#FFFF00"; }, 3000);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#33CC33"; }, 3200);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#006600"; }, 3400);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#00FF99"; }, 3600);
+                        setTimeout(function() { boxA5.style.backgroundColor = "#33CCCC"; }, 3800);
+                        setTimeout(function() { boxA5.style.backgroundColor = "white"; }, 4000);
+
+                        setTimeout(function() { boxA6.style.backgroundColor = "#0000CC"; }, 1200);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#3333CC"; }, 1400);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#9966FF"; }, 1600);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#990033"; }, 1800);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#CC0033"; }, 2000);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#CC3399"; }, 2200);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#FF0066"; }, 2400);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#FF0000"; }, 2600);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#FF6600"; }, 2800);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#FF9933"; }, 3000);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#FFFF00"; }, 3200);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#33CC33"; }, 3400);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#006600"; }, 3600);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#00FF99"; }, 3800);
+                        setTimeout(function() { boxA6.style.backgroundColor = "#33CCCC"; }, 4000);
+                        setTimeout(function() { boxA6.style.backgroundColor = "white"; }, 4200);
+
+                        setTimeout(function() { boxA7.style.backgroundColor = "#0000CC"; }, 1400);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#3333CC"; }, 1600);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#9966FF"; }, 1800);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#990033"; }, 2000);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#CC0033"; }, 2200);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#CC3399"; }, 2400);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#FF0066"; }, 2600);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#FF0000"; }, 2800);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#FF6600"; }, 3000);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#FF9933"; }, 3200);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#FFFF00"; }, 3400);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#33CC33"; }, 3600);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#006600"; }, 3800);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#00FF99"; }, 4000);
+                        setTimeout(function() { boxA7.style.backgroundColor = "#33CCCC"; }, 4200);
+                        setTimeout(function() { boxA7.style.backgroundColor = "white"; }, 4400);
+
+                        setTimeout(function() { boxA8.style.backgroundColor = "#0000CC"; }, 1600);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#3333CC"; }, 1800);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#9966FF"; }, 2000);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#990033"; }, 2200);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#CC0033"; }, 2400);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#CC3399"; }, 2600);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#FF0066"; }, 2800);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#FF0000"; }, 3000);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#FF6600"; }, 3200);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#FF9933"; }, 3400);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#FFFF00"; }, 3600);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#33CC33"; }, 3800);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#006600"; }, 4000);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#00FF99"; }, 4200);
+                        setTimeout(function() { boxA8.style.backgroundColor = "#33CCCC"; }, 4400);
+                        setTimeout(function() { boxA8.style.backgroundColor = "white"; }, 4600);
+
+                        setTimeout(function() { boxA9.style.backgroundColor = "#0000CC"; }, 1800);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#3333CC"; }, 2000);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#9966FF"; }, 2200);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#990033"; }, 2400);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#CC0033"; }, 2600);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#CC3399"; }, 2800);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#FF0066"; }, 3000);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#FF0000"; }, 3200);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#FF6600"; }, 3400);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#FF9933"; }, 3600);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#FFFF00"; }, 3800);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#33CC33"; }, 4000);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#006600"; }, 4200);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#00FF99"; }, 4400);
+                        setTimeout(function() { boxA9.style.backgroundColor = "#33CCCC"; }, 4600);
+                        setTimeout(function() { boxA9.style.backgroundColor = "white"; }, 4800);
+
+                        setTimeout(function() { boxA10.style.backgroundColor = "#0000CC"; }, 2000);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#3333CC"; }, 2200);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#9966FF"; }, 2400);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#990033"; }, 2600);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#CC0033"; }, 2800);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#CC3399"; }, 3000);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#FF0066"; }, 3200);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#FF0000"; }, 3400);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#FF6600"; }, 3600);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#FF9933"; }, 3800);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#FFFF00"; }, 4000);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#33CC33"; }, 4200);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#006600"; }, 4400);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#00FF99"; }, 4600);
+                        setTimeout(function() { boxA10.style.backgroundColor = "#33CCCC"; }, 4800);
+                        setTimeout(function() { boxA10.style.backgroundColor = "white"; }, 5000);
+
+                        setTimeout(function() { boxA11.style.backgroundColor = "#0000CC"; }, 2200);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#3333CC"; }, 2400);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#9966FF"; }, 2600);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#990033"; }, 2800);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#CC0033"; }, 3000);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#CC3399"; }, 3200);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#FF0066"; }, 3400);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#FF0000"; }, 3600);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#FF6600"; }, 3800);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#FF9933"; }, 4000);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#FFFF00"; }, 4200);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#33CC33"; }, 4400);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#006600"; }, 4600);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#00FF99"; }, 4800);
+                        setTimeout(function() { boxA11.style.backgroundColor = "#33CCCC"; }, 5000);
+                        setTimeout(function() { boxA11.style.backgroundColor = "white"; }, 5200);
+
+                        setTimeout(function() { boxA12.style.backgroundColor = "#0000CC"; }, 2400);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#3333CC"; }, 2600);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#9966FF"; }, 2800);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#990033"; }, 3000);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#CC0033"; }, 3200);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#CC3399"; }, 3400);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#FF0066"; }, 3600);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#FF0000"; }, 3800);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#FF6600"; }, 4000);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#FF9933"; }, 4200);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#FFFF00"; }, 4400);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#33CC33"; }, 4600);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#006600"; }, 4800);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#00FF99"; }, 5000);
+                        setTimeout(function() { boxA12.style.backgroundColor = "#33CCCC"; }, 5200);
+                        setTimeout(function() { boxA12.style.backgroundColor = "white"; }, 5400);
+
+                        setTimeout(function() { boxA13.style.backgroundColor = "#0000CC"; }, 2600);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#3333CC"; }, 2800);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#9966FF"; }, 3000);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#990033"; }, 3200);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#CC0033"; }, 3400);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#CC3399"; }, 3600);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#FF0066"; }, 3800);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#FF0000"; }, 4000);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#FF6600"; }, 4200);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#FF9933"; }, 4400);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#FFFF00"; }, 4600);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#33CC33"; }, 4800);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#006600"; }, 5000);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#00FF99"; }, 5200);
+                        setTimeout(function() { boxA13.style.backgroundColor = "#33CCCC"; }, 5400);
+                        setTimeout(function() { boxA13.style.backgroundColor = "white"; }, 5600);
+
+                        setTimeout(function() { boxA14.style.backgroundColor = "#0000CC"; }, 2800);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#3333CC"; }, 3000);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#9966FF"; }, 3200);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#990033"; }, 3400);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#CC0033"; }, 3600);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#CC3399"; }, 3800);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#FF0066"; }, 4000);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#FF0000"; }, 4200);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#FF6600"; }, 4400);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#FF9933"; }, 4600);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#FFFF00"; }, 4800);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#33CC33"; }, 5200);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#006600"; }, 5400);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#00FF99"; }, 5600);
+                        setTimeout(function() { boxA14.style.backgroundColor = "#33CCCC"; }, 5800);
+                        setTimeout(function() { boxA14.style.backgroundColor = "white"; }, 6000);
+
+                        setTimeout(function() { boxA15.style.backgroundColor = "#0000CC"; }, 3000);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#3333CC"; }, 3200);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#9966FF"; }, 3400);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#990033"; }, 3600);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#CC0033"; }, 3800);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#CC3399"; }, 4000);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#FF0066"; }, 4200);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#FF0000"; }, 4400);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#FF6600"; }, 4600);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#FF9933"; }, 4800);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#FFFF00"; }, 5000);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#33CC33"; }, 5200);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#006600"; }, 5400);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#00FF99"; }, 5600);
+                        setTimeout(function() { boxA15.style.backgroundColor = "#33CCCC"; }, 5800);
+                        setTimeout(function() { boxA15.style.backgroundColor = "white"; }, 6000);
+
+                        setTimeout(function() { boxA16.style.backgroundColor = "#0000CC"; }, 3200);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#3333CC"; }, 3400);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#9966FF"; }, 3600);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#990033"; }, 3800);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#CC0033"; }, 4000);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#CC3399"; }, 4200);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#FF0066"; }, 4400);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#FF0000"; }, 4600);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#FF6600"; }, 4800);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#FF9933"; }, 5000);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#FFFF00"; }, 5200);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#33CC33"; }, 5400);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#006600"; }, 5600);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#00FF99"; }, 5800);
+                        setTimeout(function() { boxA16.style.backgroundColor = "#33CCCC"; }, 6000);
+                        setTimeout(function() { boxA16.style.backgroundColor = "white"; }, 6200);
+
+                        setTimeout(function() { boxA17.style.backgroundColor = "#0000CC"; }, 3400);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#3333CC"; }, 3600);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#9966FF"; }, 3800);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#990033"; }, 4000);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#CC0033"; }, 4200);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#CC3399"; }, 4400);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#FF0066"; }, 4600);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#FF0000"; }, 4800);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#FF6600"; }, 5000);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#FF9933"; }, 5200);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#FFFF00"; }, 5400);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#33CC33"; }, 5600);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#006600"; }, 5800);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#00FF99"; }, 6000);
+                        setTimeout(function() { boxA17.style.backgroundColor = "#33CCCC"; }, 6200);
+                        setTimeout(function() { boxA17.style.backgroundColor = "white"; }, 6400);
+
+                        setTimeout(function() { boxA18.style.backgroundColor = "#0000CC"; }, 3600);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#3333CC"; }, 3800);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#9966FF"; }, 4000);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#990033"; }, 4200);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#CC0033"; }, 4400);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#CC3399"; }, 4600);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#FF0066"; }, 4800);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#FF0000"; }, 5000);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#FF6600"; }, 5200);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#FF9933"; }, 5400);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#FFFF00"; }, 5600);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#33CC33"; }, 5800);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#006600"; }, 6000);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#00FF99"; }, 6200);
+                        setTimeout(function() { boxA18.style.backgroundColor = "#33CCCC"; }, 6400);
+                        setTimeout(function() { boxA18.style.backgroundColor = "white"; }, 6600);
+
+                        setTimeout(function() { boxB1.style.backgroundColor = "#0000CC"; }, 3800);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#3333CC"; }, 4000);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#9966FF"; }, 4200);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#990033"; }, 4400);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#CC0033"; }, 4600);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#CC3399"; }, 4800);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#FF0066"; }, 5000);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#FF0000"; }, 5200);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#FF6600"; }, 5400);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#FF9933"; }, 5600);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#FFFF00"; }, 5800);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#33CC33"; }, 6000);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#006600"; }, 6200);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#00FF99"; }, 6400);
+                        setTimeout(function() { boxB1.style.backgroundColor = "#33CCCC"; }, 6600);
+                        setTimeout(function() { boxB1.style.backgroundColor = "white"; }, 6800);
+
+                        setTimeout(function() { boxB2.style.backgroundColor = "#0000CC"; }, 4000);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#3333CC"; }, 4200);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#9966FF"; }, 4400);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#990033"; }, 4600);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#CC0033"; }, 4800);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#CC3399"; }, 5000);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#FF0066"; }, 5200);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#FF0000"; }, 5400);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#FF6600"; }, 5600);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#FF9933"; }, 5800);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#FFFF00"; }, 6000);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#33CC33"; }, 6200);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#006600"; }, 6400);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#00FF99"; }, 6600);
+                        setTimeout(function() { boxB2.style.backgroundColor = "#33CCCC"; }, 6800);
+                        setTimeout(function() { boxB2.style.backgroundColor = "white"; }, 7000);
+
+                        setTimeout(function() { boxB3.style.backgroundColor = "#0000CC"; }, 4200);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#3333CC"; }, 4400);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#9966FF"; }, 4600);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#990033"; }, 4800);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#CC0033"; }, 5000);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#CC3399"; }, 5200);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#FF0066"; }, 5400);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#FF0000"; }, 5600);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#FF6600"; }, 5800);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#FF9933"; }, 6000);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#FFFF00"; }, 6200);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#33CC33"; }, 6400);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#006600"; }, 6600);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#00FF99"; }, 6800);
+                        setTimeout(function() { boxB3.style.backgroundColor = "#33CCCC"; }, 7000);
+                        setTimeout(function() { boxB3.style.backgroundColor = "white"; }, 7200);
+
+                        setTimeout(function() { boxB4.style.backgroundColor = "#0000CC"; }, 4400);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#3333CC"; }, 4600);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#9966FF"; }, 4800);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#990033"; }, 5000);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#CC0033"; }, 5200);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#CC3399"; }, 5400);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#FF0066"; }, 5600);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#FF0000"; }, 5800);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#FF6600"; }, 6000);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#FF9933"; }, 6200);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#FFFF00"; }, 6400);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#33CC33"; }, 6600);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#006600"; }, 6800);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#00FF99"; }, 7000);
+                        setTimeout(function() { boxB4.style.backgroundColor = "#33CCCC"; }, 7200);
+                        setTimeout(function() { boxB4.style.backgroundColor = "white"; }, 7400);
+
+                        setTimeout(function() { boxB5.style.backgroundColor = "#0000CC"; }, 4600);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#3333CC"; }, 4800);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#9966FF"; }, 5000);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#990033"; }, 5200);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#CC0033"; }, 5400);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#CC3399"; }, 5600);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#FF0066"; }, 5800);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#FF0000"; }, 6000);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#FF6600"; }, 6200);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#FF9933"; }, 6400);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#FFFF00"; }, 6600);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#33CC33"; }, 6800);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#006600"; }, 7000);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#00FF99"; }, 7200);
+                        setTimeout(function() { boxB5.style.backgroundColor = "#33CCCC"; }, 7400);
+                        setTimeout(function() { boxB5.style.backgroundColor = "white"; }, 7600);
+
+                        setTimeout(function() { boxB6.style.backgroundColor = "#0000CC"; }, 4800);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#3333CC"; }, 5000);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#9966FF"; }, 5200);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#990033"; }, 5400);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#CC0033"; }, 5600);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#CC3399"; }, 5800);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#FF0066"; }, 6000);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#FF0000"; }, 6200);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#FF6600"; }, 6400);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#FF9933"; }, 6600);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#FFFF00"; }, 6800);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#33CC33"; }, 7000);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#006600"; }, 7200);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#00FF99"; }, 7400);
+                        setTimeout(function() { boxB6.style.backgroundColor = "#33CCCC"; }, 7600);
+                        setTimeout(function() { boxB6.style.backgroundColor = "white"; }, 7800);
+
+                        setTimeout(function() { boxB7.style.backgroundColor = "#0000CC"; }, 5000);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#3333CC"; }, 5200);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#9966FF"; }, 5400);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#990033"; }, 5600);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#CC0033"; }, 5800);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#CC3399"; }, 6000);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#FF0066"; }, 6200);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#FF0000"; }, 6400);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#FF6600"; }, 6600);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#FF9933"; }, 6800);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#FFFF00"; }, 7000);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#33CC33"; }, 7200);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#006600"; }, 7400);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#00FF99"; }, 7600);
+                        setTimeout(function() { boxB7.style.backgroundColor = "#33CCCC"; }, 7800);
+                        setTimeout(function() { boxB7.style.backgroundColor = "white"; }, 8000);
+
+                        setTimeout(function() { boxB8.style.backgroundColor = "#0000CC"; }, 5200);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#3333CC"; }, 5400);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#9966FF"; }, 5600);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#990033"; }, 5800);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#CC0033"; }, 6000);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#CC3399"; }, 6200);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#FF0066"; }, 6400);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#FF0000"; }, 6600);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#FF6600"; }, 6800);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#FF9933"; }, 7000);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#FFFF00"; }, 7200);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#33CC33"; }, 7400);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#006600"; }, 7600);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#00FF99"; }, 7800);
+                        setTimeout(function() { boxB8.style.backgroundColor = "#33CCCC"; }, 8000);
+                        setTimeout(function() { boxB8.style.backgroundColor = "white"; }, 8200);
+
+                        setTimeout(function() { boxB9.style.backgroundColor = "#0000CC"; }, 5400);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#3333CC"; }, 5600);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#9966FF"; }, 5800);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#990033"; }, 6000);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#CC0033"; }, 6200);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#CC3399"; }, 6400);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#FF0066"; }, 6600);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#FF0000"; }, 6800);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#FF6600"; }, 7000);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#FF9933"; }, 7200);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#FFFF00"; }, 7400);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#33CC33"; }, 7600);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#006600"; }, 7800);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#00FF99"; }, 8000);
+                        setTimeout(function() { boxB9.style.backgroundColor = "#33CCCC"; }, 8200);
+                        setTimeout(function() { boxB9.style.backgroundColor = "white"; }, 8400);
+
+                        setTimeout(function() { boxB10.style.backgroundColor = "#0000CC"; }, 5600);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#3333CC"; }, 5800);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#9966FF"; }, 6000);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#990033"; }, 6200);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#CC0033"; }, 6400);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#CC3399"; }, 6600);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#FF0066"; }, 6800);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#FF0000"; }, 7000);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#FF6600"; }, 7200);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#FF9933"; }, 7400);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#FFFF00"; }, 7600);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#33CC33"; }, 7800);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#006600"; }, 8000);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#00FF99"; }, 8200);
+                        setTimeout(function() { boxB10.style.backgroundColor = "#33CCCC"; }, 8400);
+                        setTimeout(function() { boxB10.style.backgroundColor = "white"; }, 8600);
+
+                        setTimeout(function() { boxC1.style.backgroundColor = "#0000CC"; }, 5800);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#3333CC"; }, 6000);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#9966FF"; }, 6200);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#990033"; }, 6400);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#CC0033"; }, 6600);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#CC3399"; }, 6800);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#FF0066"; }, 7000);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#FF0000"; }, 7200);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#FF6600"; }, 7400);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#FF9933"; }, 7600);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#FFFF00"; }, 7800);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#33CC33"; }, 8000);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#006600"; }, 8200);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#00FF99"; }, 8400);
+                        setTimeout(function() { boxC1.style.backgroundColor = "#33CCCC"; }, 8600);
+                        setTimeout(function() { boxC1.style.backgroundColor = "white"; }, 8800);
+
+                        setTimeout(function() { boxC2.style.backgroundColor = "#0000CC"; }, 6000);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#3333CC"; }, 6200);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#9966FF"; }, 6400);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#990033"; }, 6600);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#CC0033"; }, 6800);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#CC3399"; }, 7000);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#FF0066"; }, 7200);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#FF0000"; }, 7400);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#FF6600"; }, 7600);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#FF9933"; }, 7800);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#FFFF00"; }, 8000);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#33CC33"; }, 8200);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#006600"; }, 8400);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#00FF99"; }, 8600);
+                        setTimeout(function() { boxC2.style.backgroundColor = "#33CCCC"; }, 8800);
+                        setTimeout(function() { boxC2.style.backgroundColor = "white"; }, 9000);
+
+                }
+
+                </script>
+        </body>
+        </html>
